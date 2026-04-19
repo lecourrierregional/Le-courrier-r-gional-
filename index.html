@@ -4,23 +4,40 @@
     <meta charset="UTF-8">
     <title>Le Courrier Régional</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             margin: 0;
             font-family: Georgia, serif;
             background-color: #f5f5f5;
         }
+
         header {
             background-color: #b40000;
             color: white;
-            padding: 25px;
+            padding: 20px;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
-            font-size: 36px;
+            font-size: 34px;
             letter-spacing: 2px;
         }
+
+        .nav {
+            background: #900000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -28,21 +45,29 @@
             padding: 40px;
             box-shadow: 0 0 15px rgba(0,0,0,0.15);
         }
+
         h2 {
             font-size: 30px;
-            margin-bottom: 10px;
         }
+
         .meta {
             color: gray;
             font-size: 14px;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 19px;
-            line-height: 1.8;
-            color: #333;
             margin-bottom: 20px;
         }
+
+        .article-img {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
         .fiction {
             margin-top: 40px;
             padding: 15px;
@@ -50,6 +75,17 @@
             border-left: 5px solid #ffcc00;
             font-size: 14px;
         }
+
+        .related {
+            margin-top: 30px;
+        }
+
+        .related li {
+            margin-bottom: 10px;
+            color: #b40000;
+            cursor: pointer;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -58,44 +94,68 @@
         }
     </style>
 </head>
+
 <body>
 
 <header>
     <h1>Le Courrier Régional</h1>
 </header>
 
+<nav class="nav">
+    <a href="#">Accueil</a>
+    <a href="#">Faits divers</a>
+    <a href="#">Politique</a>
+    <a href="#">Sport</a>
+    <a href="#">Contact</a>
+</nav>
+
 <div class="container">
+
     <h2>Un adolescent de 16 ans en urgence absolue après un accident avec un poids lourd</h2>
-    <div class="meta">Publié le 20 avril 2026</div>
+
+    <div class="meta">
+        Publié le 20 avril 2026 à 08h42 • Par la rédaction
+    </div>
+
+    <img src="https://images.unsplash.com/photo-1584467735871-bfbcb5a7c6a7" class="article-img">
 
     <p>
-        Un grave accident de la circulation s’est produit ce matin sur un axe routier fréquenté.
-        Un jeune de 16 ans, prénommé Enzo, a été grièvement blessé alors qu’il circulait à moto de 50cc 
-        pour se rendre sur son lieu de formation.
+        Un grave accident de la circulation s’est produit a Agen ce matin sur un axe routier particulièrement fréquenté.
+        Un adolescent de 16 ans a été grièvement blessé alors qu’il circulait à moto pour se rendre sur son lieu de formation.
     </p>
 
     <p>
-        Selon les premiers éléments, l’adolescent roulait sur une moto de petite cylindrée rouge
-        et blanche lorsqu’il se fait percuter par un poids lourd. Sous la violence de l’impact,
-        il est projeté hors de la chaussée et chute dans un fossé en contrebas.
+        Selon les premiers éléments recueillis sur place, le jeune circulait sur une moto de petite cylindrée
+        lorsqu’il aurait été percuté par un poids lourd dans des circonstances encore floues.
+        Sous la violence du choc, la victime a été projetée dans un fossé en contrebas.
     </p>
 
     <p>
-        Les secours, rapidement intervenus, ont pris en charge la victime en urgence vitale absolue.
-        Après avoir été stabilisé sur place, le jeune homme a été transporté vers un centre hospitalier.
+        Les secours, rapidement intervenus, ont pris en charge l’adolescent en urgence absolue.
+        Après avoir été stabilisé sur place par les équipes médicales, il a été transporté vers un centre hospitalier
+        de la région.
     </p>
 
     <p>
-        Une enquête a été ouverte afin de déterminer les circonstances exactes de cet accident.
+        Une enquête a été ouverte par les autorités afin de déterminer les circonstances exactes de cet accident.
+        Le conducteur du poids lourd a été entendu.
     </p>
 
     <div class="fiction">
-        
+        ⚠️ Ceci est une œuvre de fiction. Les faits relatés sont entièrement imaginaires.
     </div>
+
+    <h3>Articles similaires</h3>
+    <ul class="related">
+        <li>Accident grave sur l’autoroute : deux blessés</li>
+        <li>Un camion percute une voiture en centre-ville</li>
+        <li>Intervention massive des pompiers après un choc violent</li>
+    </ul>
+
 </div>
 
 <footer>
-    © 2026 Le Courrier Régional.
+    © 2026 Le Courrier Régional
 </footer>
 
 </body>
